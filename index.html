@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Gojo Vendas</title>
 
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://wallpapercave.com/wp/wp11302133.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px;
+}
+
+.card {
+  background: rgba(0,0,0,0.85);
+  border: 2px solid #00aaff;
+  border-radius: 12px;
+  width: 260px;
+  padding: 15px;
+}
+
+.card h2 {
+  color: #00aaff;
+}
+
+.stock {
+  font-weight: bold;
+  color: #00ff88;
+}
+
+button {
+  background: #00aaff;
+  border: none;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button:hover {
+  background: #00ffea;
+}
+
+.pix {
+  display: none;
+  background: #111;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  word-break: break-all;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔥 GOJO VENDAS – BLOX FRUITS 🔥</h1>
+
+<div class="container">
+
+<!-- MAMUTE -->
+<div class="card">
+  <h2>Mamute</h2>
+  <p>Level: Máx</p>
+  <p>Gold: 1B+</p>
+  <p>Fruta: Mamute</p>
+  <p class="stock">Estoque: 1</p>
+  <button onclick="mostrarPix('pix-mamute')">Comprar</button>
+  <div class="pix" id="pix-mamute">
+    00020101021126330014br.gov.bcb.pix01110874447755452040000530398654044.005802BR5922APARICIO A F B BISNETO6008RIO REAL62070503***63043E42
+    <br><br>
+    <a href="https://wa.me/5574984447755?text=Comprei%20a%20Mamute,%20segue%20o%20comprovante" target="_blank">
+      <button>Enviar comprovante</button>
+    </a>
+  </div>
+</div>
+
+<!-- SHADOW -->
+<div class="card">
+  <h2>Shadow</h2>
+  <p>Level: Máx</p>
+  <p>Gold: 1B+</p>
+  <p>Fruta: Shadow</p>
+  <p class="stock">Estoque: 1</p>
+  <button onclick="mostrarPix('pix-shadow')">Comprar</button>
+  <div class="pix" id="pix-shadow">
+    00020101021126330014br.gov.bcb.pix01110874447755452040000530398654044.005802BR5922APARICIO A F B BISNETO6008RIO REAL62070503***63043E42
+    <br><br>
+    <a href="https://wa.me/5574984447755?text=Comprei%20a%20Shadow,%20segue%20o%20comprovante" target="_blank">
+      <button>Enviar comprovante</button>
+    </a>
+  </div>
+</div>
+
+<!-- VENOM -->
+<div class="card">
+  <h2>Venom</h2>
+  <p>Level: Máx</p>
+  <p>Gold: 1B+</p>
+  <p>Fruta: Venom</p>
+  <p class="stock">Estoque: 1</p>
+  <button onclick="mostrarPix('pix-venom')">Comprar</button>
+  <div class="pix" id="pix-venom">
+    00020101021126330014br.gov.bcb.pix01110874447755452040000530398654046.905802BR5922APARICIO A F B BISNETO6008RIO REAL62070503***6304ADC8
+    <br><br>
+    <a href="https://wa.me/5574984447755?text=Comprei%20a%20Venom,%20segue%20o%20comprovante" target="_blank">
+      <button>Enviar comprovante</button>
+    </a>
+  </div>
+</div>
+
+<!-- SPIRIT -->
+<div class="card">
+  <h2>Spirit</h2>
+  <p>Level: Máx</p>
+  <p>Gold: 1B+</p>
+  <p>Fruta: Spirit</p>
+  <p class="stock">Estoque: 1</p>
+  <button onclick="mostrarPix('pix-spirit')">Comprar</button>
+  <div class="pix" id="pix-spirit">
+    00020101021126330014br.gov.bcb.pix01110874447755452040000530398654047.005802BR5922APARICIO A F B BISNETO6008RIO REAL62070503***63040A46
+    <br><br>
+    <a href="https://wa.me/5574984447755?text=Comprei%20a%20Spirit,%20segue%20o%20comprovante" target="_blank">
+      <button>Enviar comprovante</button>
+    </a>
+  </div>
+</div>
+
+</div>
+
+<script>
+function mostrarPix(id) {
+  document.querySelectorAll('.pix').forEach(p => p.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+</script>
+
+</body>
+  </html>
